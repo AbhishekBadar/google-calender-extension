@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Quick View: Google Calendar",
+  "version": "2.0",
+  "description": "Quickly view your Google Calendar events with modern UI, multi-day view, and smart notifications.",
+  "icons": {
+    "16": "icons/icon16.jpeg",
+    "48": "icons/icon48.jpeg",
+    "128": "icons/icon128.jpeg"
+  },
+  "permissions": [
+    "identity",
+    "storage",
+    "notifications",
+    "activeTab"
+  ],
+  "oauth2": {
+    "client_id": "955106871101-87p37rdl0vdci3gemae9u9i6u6es59v0.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar"
+    ]
+  },
+  "host_permissions": [
+    "https://www.googleapis.com/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Quick View: Google Calendar"
+  },
+  "options_page": "options.html"
+}
